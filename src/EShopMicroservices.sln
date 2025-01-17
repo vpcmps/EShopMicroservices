@@ -3,6 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7D831356-4C91-45B9-8FFD-897BA147E5AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{B95DF674-F17E-401C-9034-661F2511AF15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{B61484B8-97CB-403B-9298-BCCB20DF3114}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Building Blocks", "Building Blocks", "{8C2B072B-8FB0-4A71-A0D5-46CC03E34164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{29ABB82F-7A90-4014-9914-915F1CD6CC23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A8043B8-0936-422A-81EB-B153566DC7C3}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+		compose.override.yml = compose.override.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{BE5CC330-3D60-4DE8-A74A-125553C6036F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Basket\Basket.API\Basket.API.csproj", "{8487C1F1-BADF-4FA2-8ADC-FD54D1B7721A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +30,26 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B95DF674-F17E-401C-9034-661F2511AF15} = {7D831356-4C91-45B9-8FFD-897BA147E5AB}
+		{B61484B8-97CB-403B-9298-BCCB20DF3114} = {B95DF674-F17E-401C-9034-661F2511AF15}
+		{29ABB82F-7A90-4014-9914-915F1CD6CC23} = {8C2B072B-8FB0-4A71-A0D5-46CC03E34164}
+		{BE5CC330-3D60-4DE8-A74A-125553C6036F} = {7D831356-4C91-45B9-8FFD-897BA147E5AB}
+		{8487C1F1-BADF-4FA2-8ADC-FD54D1B7721A} = {BE5CC330-3D60-4DE8-A74A-125553C6036F}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B61484B8-97CB-403B-9298-BCCB20DF3114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61484B8-97CB-403B-9298-BCCB20DF3114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61484B8-97CB-403B-9298-BCCB20DF3114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61484B8-97CB-403B-9298-BCCB20DF3114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29ABB82F-7A90-4014-9914-915F1CD6CC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29ABB82F-7A90-4014-9914-915F1CD6CC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29ABB82F-7A90-4014-9914-915F1CD6CC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29ABB82F-7A90-4014-9914-915F1CD6CC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8487C1F1-BADF-4FA2-8ADC-FD54D1B7721A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8487C1F1-BADF-4FA2-8ADC-FD54D1B7721A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8487C1F1-BADF-4FA2-8ADC-FD54D1B7721A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8487C1F1-BADF-4FA2-8ADC-FD54D1B7721A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
