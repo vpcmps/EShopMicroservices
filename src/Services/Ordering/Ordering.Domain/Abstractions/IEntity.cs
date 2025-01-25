@@ -1,7 +1,7 @@
 ﻿namespace Ordering.Domain.Abstractions;
-internal interface IEntity<T> : IEntity
-{
 
+public interface IEntity<T> : IEntity
+{
     public T Id { get; set; }
 }
 
